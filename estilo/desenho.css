@@ -1,0 +1,57 @@
+@charset 'UYF-8';
+body{
+    height: 100vh;
+    width: 100vw;
+    background: aquamarine url("../img/fundo3.png") no-repeat center center fixed;
+    background-size: cover;
+}
+#ft1{
+    background: white url("../img/Desenho.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+#ft1:hover{
+    outline: 2px solid orangered;
+}
+#ft2{
+    background: white url("../img/Desenho2.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft2:hover{
+    outline: 2px solid orangered;
+}
+#ft3{
+    background: white url("../img/Desenho3.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft3:hover{
+    outline: 2px solid orangered;
+}
+#ft4{
+    background: white url("../img/Desenho4.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft4:hover{
+    outline: 2px solid orangered;
+}
+#ft5{
+    background: white url("../img/Desenho5.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft5:hover{
+    outline: 2px solid orangered;
+}
+#ft6{
+    background: white url("../img/Desenho6.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft6:hover{
+    outline: 2px solid orangered;
+}
+#ft7{
+    background: white url("../img/Desenho7.jpg") no-repeat center center;
+    background-size: cover;
+}
+#ft7:hover{
+    outline: 2px solid orangered;
+}

@@ -1,0 +1,256 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* fontes otf = format('opentype')
+   fontes ttf = format('truetype')
+ */
+@font-face  {
+    font-family: 'pok';
+    src: url('../fonts/Pokemon Solid.ttf') format("truetype");
+}
+@font-face  {
+    font-family: 'escola';
+    src: url('../fonts/BeTrueToYourSchool-Regular.ttf');
+}
+@font-face  {
+    font-family: 'formu';
+    src: url('../fonts/Prototype.ttf') format('truetype');
+}
+@font-face  {
+    font-family: 'legends';
+    src: url('../fonts/RetroMario-Regular.otf') format('opentype');
+}
+body{
+    font-family: arial;
+    background-color: orangered;
+    background: url("../img/fundo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+header h1{
+    text-shadow: 1px 1px 0px white;
+    color: orangered;
+    font-family: 'escola';
+    font-variant: small-caps;
+    font-size: 2.2em;
+}
+header nav{
+    display: none;
+    flex-flow: column nowrap;
+}
+nav a{
+    color: white;
+    width: 80vw;
+    text-align: center;
+    padding: 10px;
+    background-color: orangered;
+    margin: 5px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: white;
+    color: orangered;
+    transition: .5s ease;
+}
+div.container{
+    display:flex ;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+}
+div.foto{
+    width: 150px;
+    height: 180px;
+    background-color: red;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px black;
+    transition: .5s;
+}
+div#ft1{
+    flex: 0 0 300px;
+    background: orangered url("../img/tela.png") no-repeat center center ;
+    background-size: cover;
+}
+div#ft2{
+    flex:0 0 150px;
+    background: orangered url("../img/ideia.png") no-repeat center center ;
+    background-size: cover;
+}
+div#ft3{
+    flex: 0 0 150px;
+    background:orangered url("../img/programa.png") no-repeat center center ;
+    background-size: contain;
+}
+div#ft4{
+    flex: 0 0 150px;
+    background:orangered url("../img/aula.png") no-repeat center center ;
+    background-size: cover;
+}
+div#ft5{
+    flex: 0 0 150px;
+    background:orangered url("../img/icon.png") no-repeat center center ;
+    background-size: contain;
+}
+
+main{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+section article{
+    background-color: white;
+    padding: 20px;
+    
+}
+section h2{
+    font-family: 'escola';
+    padding: 5px;
+}
+article#artigo1{
+    background-color: #ff6afc74;
+    color: black;
+    transition: .5s;
+}
+form h2{
+    font-family: 'formu';
+    text-align: center;
+}
+form p{
+    display: flex;
+    align-items: center;
+}
+#artigo1 label{
+    display: none;
+}
+#artigo1 input{
+    width: 80%; 
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#artigo1 input[type="text"]{
+    
+}
+#artigo1 input[type="password"]{
+    
+}
+#artigo1 input[type="submit"]{
+    width: 70px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    transition: .5s;
+}    
+#artigo1 input:hover[type="submit"]{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+#artigo1 input[type="reset"]{
+    width: 70px;
+    border-radius: 25px;
+    background-color: orchid;
+    color: black;
+    transition: .5s;
+}
+#artigo1 input:hover[type="reset"]{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+article#artigo2{
+    transition: .5s;
+}
+#artigo2 form{
+    background: aqua url("../img/legends_tela.jpeg") no-repeat center top;
+    background-size: cover;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+#artigo2 h2{
+    font-family: 'legends';
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+#artigo2 form input[type="text"]{
+    padding: 2px;
+    width: 200px;
+    margin-bottom: 8px;
+}
+#artigo2 form input[type="checkbox"],#artigo2 form input[type="radio"]{
+    margin: 10px;
+    
+}
+#artigo2 form label{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding: 2px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+}
+#artigo2 form input[type="submit"]{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    background-color: #8098ffad;
+    border: 2px solid darkred;
+    color: red;
+    font-weight: bolder;
+}
+article#artigo3{
+    background: red url("../img/netflix.jpeg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 0px red;
+    font-family: 'pok';
+    transition: .5s;
+}
+ul,ol{
+    margin-left: 30px;
+    font-weight: bolder;
+   text-shadow: 1px 1px 0px black;
+}
+
+article#artigo4{
+    transition: .5s;
+}
+#artigo4 h2{
+    background-image: linear-gradient(to right,orangered,transparent);
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'formu';
+}
+#artigo4 p{
+    padding: 5px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    
+}
+#artigo4 img{
+    width: 100%;
+    height: 120px;
+}
+
